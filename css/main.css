@@ -34,6 +34,7 @@ input {
   max-width: 170px;
 }
 button {
+  font-family: "Maplestory";
   width: 100px;
   padding: 10px;
   border: 2px solid #333;
@@ -108,15 +109,16 @@ header {
   margin-top: 150px;
   padding: 0 15px;
   justify-content: center;
+  height: 1000px;
 }
 .check__salary p {
   text-align: center;
   font-size: 20px;
-  line-height: 1.4;
 }
 .check__box {
   position: relative;
   width: 800px;
+  height: 650px;
   left: 50%;
   transform: translate(-50%, 20%);
   border: 12px solid #333;
@@ -127,16 +129,72 @@ header {
 .check__box .contWrap {
   position: relative;
   width: 730px;
-  padding : 20px;
+  padding : 10px 20px;
   left: 50%;
-  transform: translate(-50%,20%);
+  transform: translate(-50%,10%);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 }
-.check__box .contWrap .stars {
-  display: flex;
+.promotion .swiper-container {
+  width: 720px;
+  overflow-y: hidden;
 }
-.check__box .contWrap .stars img {
-  width: 200px;
+.promotion .swiper-wrapper img {
+  width: 230px;
+  height: 240px;
+  margin: 30px 0;
+  border: solid 2px #333;
+}
+.promotion .swiper-slide {
+  opacity: .4;
+  transition: opacity .7s;
+}
+.promotion .swiper-slide-active {
+  opacity: 1;
+}
+.promotion .swiper-pagination {
+  bottom: -18px;
+  left: 0;
+  right: 0;
+}
+.promotion .swiper-pagination .swiper-pagination-bullet {
+  background-color: #333;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  outline: none;
+}
+.promotion .swiper-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+.promotion .swiper-prev,
+.promotion .swiper-next {
+  width: 64px;
+  height: 40px;
+  border: 2px solid #333;
+  border-radius: 10%;
+  position: absolute;
+  z-index: 3;
+  top: 330px;
+  cursor: pointer;
+  outline: none;
+  transition: .4s;
+}
+.promotion .swiper-prev {
+  left: 40%;
+  margin-left: -120px;
+}
+.promotion .swiper-next {
+  right: 40%;
+  margin-right: -120px;
+}
+.contWrap .startBtn {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translate(-50%, 50%);
 }
 
+.main__salary {
+  background-color: #0B6138;
+}

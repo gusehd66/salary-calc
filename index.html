@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.css">
   <title>연봉계산기</title>
 </head>
@@ -16,7 +17,7 @@
     <div class="inner">
       <div class="title__image">
         <h1>재미로 보는<br>연봉 계산기</h1>
-        <!-- 이대호 연봉 25억,손흥민 106억,일론머스크7.7조,메시1700억,스테판커리480억,메이웨더경호원1억7000 -->
+        <!-- 이대호 연봉 25억,손흥민 106억,일론머스크7.7조,메시1400억,스테판커리480억,메이웨더경호원1억7000 -->
         <img src="./image/money-1.png" alt="" />
         <img src="./image/calculator.png" alt="" />
         <img src="./image/musk.png" alt="" />
@@ -38,22 +39,44 @@
         <div class="contWrap">
           <h3>연봉을 입력해보세요(만)</h3>
           <input type="number" placeholder="만 단위로 입력">
-          <button type="button" class="startBtn">확인</button>
           <p class="sec">당신은 1초에 얼마를 벌고 있을까요?</p>
         </div>
         <div class="contWrap">
           <h3>연봉을 비교할 스타를 선택해주세요.</h3>
-          <div class="stars">
-            <!-- <img src="./image/musk.png" alt="">
-            <img src="./image/musk.png" alt="">
-            <img src="./image/musk.png" alt=""> -->
+          <div class="promotion">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./image/musk.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/son.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/curry.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./image/son.png" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <button type="button" class="swiper-prev">PREV</button>
+            <button type="button" class="swiper-next">NEXT</button>
           </div>
+          <button type="button" class="startBtn">확인</button>
         </div>
       </div>
-
     </div>
   </div>
 
+  <!-- HIDE -->
+  <div class="main__salary">
+    <div class="inner">
+      <!-- 확인누르면 숨겨진 height 0 에서 튀어나옴 -->
+    </div>
+  </div>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 

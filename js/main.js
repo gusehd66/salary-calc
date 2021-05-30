@@ -24,4 +24,19 @@ window.onload = function () {
       sec.innerHTML = "당신은 " + secNum + "초에 " + (secValue * secNum).toFixed(0) + "원 벌고 있습니다";
     }, 1000)
   }
+
+  new Swiper('.promotion .swiper-container', {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+      el: '.promotion .swiper-pagination', //페이지 번호 요소 선택자
+      clickable: true
+    },
+    navigation: {
+      prevEl: '.promotion .swiper-prev',
+      nextEl: '.promotion .swiper-next'
+    }
+  });
 }
