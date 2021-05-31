@@ -195,6 +195,100 @@ header {
   transform: translate(-50%, 50%);
 }
 
+/* HIDE */
 .main__salary {
+  background-color: whitesmoke;
+}
+.main__salary .inner {
+  padding-bottom: 80px;
+}
+.main__salary .star__name {
+  text-align: center;
+  font-size: 3rem;
+  padding: 3rem 0 1rem 0;
+  text-decoration: underline #f5c81a 9px;
+}
+.main__salary .star__salary {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  
+}
+.main__salary .star__salary p {
+  display: inline-block;
+  font-size: 2rem;
+  color: #0B6138;
+}
+.main__salary .star__vs {
+  text-align: center;
+  font-size: 3rem;
+  text-decoration: underline #f5c81a 9px;
+  margin-bottom: 5rem;
+}
+.vscontents {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  text-align: center;
+  font-size: 2.5rem;
+}
+.vscontents .vscontents__wrap {
+  width: 35%;
+  margin: 0 20px;
+} 
+.vscontents .vscontents__wrap .vscontents__calc {
   background-color: #0B6138;
+  padding: 30px 30px;
+  border-radius: 25px;
+  color: whitesmoke;
+}
+.vscontents .vscontents__wrap .vscontents__calc .yellow {
+  color: #f5c81a;
+}
+.vscontents .vscontents__wrap .vscontents__calc ul {
+  font-size: 1.2rem;
+  padding: 20px 20px;
+}
+.vscontents .vscontents__wrap .vscontents__calc li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.vscontents .vscontents__wrap .vscontents__calc .baseline {
+  border-bottom: solid 3px whitesmoke;
+  padding-bottom: 20px;
+}
+.vscontents .vscontents__wrap .vscontents__calc .calc__second p {
+  font-size: 1.2rem;
+}
+.vscontents .vscontents__wrap .vscontents__calc .calc__second .secondMoney {
+  font-size: 2rem;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #272727;
+  border-top: 3px dashed #0B6138;
+}
+footer .inner {
+  padding: 10px 0 20px 0;
+}
+footer .info {
+  margin-top: 10px;
+  text-align: center;
+}
+footer .info span {
+  margin-right: 20px;
+  color: #999;
+  font-size: 12px;
+}
+footer .info span:last-child {
+  margin-right: 0;
+}
+footer .copyright {
+  color: #999;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 12px;
 }
