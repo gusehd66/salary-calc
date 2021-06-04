@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.css">
+  <!-- TWEENMAX -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
   <title>연봉계산기</title>
 </head>
 
@@ -17,10 +20,9 @@
     <div class="inner">
       <div class="title__image">
         <h1>재미로 보는<br>연봉 계산기</h1>
-        <!-- 이대호 연봉 25억,손흥민 106억,일론머스크7.7조,메시1400억,스테판커리480억,메이웨더경호원1억7000 -->
         <img src="./image/money-1.png" alt="" />
         <img src="./image/calculator.png" alt="" />
-        <img src="./image/musk.png" alt="" />
+        <img src="./image/messi-2.png" alt="" />
         <img src="./image/son.png" alt="" />
         <img src="./image/curry.png" alt="" />
 
@@ -46,17 +48,33 @@
           <div class="promotion">
             <div class="swiper-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide musk">
-                  <img src="./image/musk.png" alt="">
+                <div class="swiper-slide messi">
+                  <img src="./image/messi.png" alt="">
+                  <p>메시</p>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide son">
                   <img src="./image/son.png" alt="">
+                  <p>손흥민</p>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide curry">
                   <img src="./image/curry.png" alt="">
+                  <p>스테판 커리</p>
                 </div>
-                <div class="swiper-slide">
-                  <img src="./image/son.png" alt="">
+                <div class="swiper-slide federer">
+                  <img src="./image/federer.png" alt="">
+                  <p>로저 페더러</p>
+                </div>
+                <div class="swiper-slide ryuhyunjin">
+                  <img src="./image/ryuhyunjin.png" alt="">
+                  <p>류현진</p>
+                </div>
+                <div class="swiper-slide faker">
+                  <img src="./image/faker.png" alt="">
+                  <p>페이커</p>
+                </div>
+                <div class="swiper-slide leedaeho">
+                  <img src="./image/leedaeho.png" alt="">
+                  <p>이대호</p>
                 </div>
               </div>
             </div>
@@ -75,13 +93,11 @@
     <div class="inner">
       <!-- 확인누르면 숨겨진 height 0 에서 튀어나옴 -->
       <div class="star__name">
-        일론머스크
       </div>
       <div class="star__salary">
-        연봉 <p>약 1조 </p>
+        연봉 <p></p>
       </div>
       <div class="star__vs">
-        당신VS일론머스크
       </div>
       <div class="vscontents">
         <div class="vscontents__wrap vscontetns__me">
@@ -89,60 +105,60 @@
           <div class="vscontents__calc calc__me">
             <ul>
               <li>
-                <p>머스크만큼 버는데</p>
-                <p class="makeMoney yellow">1200년</p>
+                <p id="whoIsStar">스타만큼 버는데</p>
+                <p class="makeMoney yellow"></p>
               </li>
               <li>
                 <p>1억 버는데 약</p>
-                <p class="million yellow">3년</p>
+                <p class="million yellow"></p>
               </li>
               <li class="baseline">
                 <p>1천 버는데 약</p>
-                <p class="thousand yellow">100일</p>
+                <p class="thousand yellow"></p>
               </li>
               <li>
                 <p>1달에</p>
-                <p class="month yellow">290만원</p>
+                <p class="month yellow"></p>
               </li>
               <li class="baseline">
                 <p>1주에</p>
-                <p class="week yellow">70만원</p>
+                <p class="week yellow"></p>
               </li>
             </ul>
             <div class="calc__second">
-              <p class="moneySecond">?초에</p>
-              <p class="secondMoney yellow">?원</p>
+              <p class="moneySecond"></p>
+              <p class="secondMoney yellow"></p>
             </div>
           </div>
         </div>
         <div class="vscontents__wrap vscontetns__star">
-          <p>머스크는?</p>
+          <p id="VSstar">스타는?</p>
           <div class="vscontents__calc calc__star">
             <ul>
               <li>
-                <p>머스크만큼 버는데</p>
-                <p class="makeMoney yellow">1200년</p>
+                <p>나만큼 버는데</p>
+                <p class="makeMoney yellow"></p>
               </li>
               <li>
                 <p>1억 버는데 약</p>
-                <p class="million yellow">3년</p>
+                <p class="million yellow"></p>
               </li>
               <li class="baseline">
                 <p>1천 버는데 약</p>
-                <p class="thousand yellow">100일</p>
+                <p class="thousand yellow"></p>
               </li>
               <li>
                 <p>1달에</p>
-                <p class="month yellow">290만원</p>
+                <p class="month yellow"></p>
               </li>
               <li class="baseline">
                 <p>1주에</p>
-                <p class="week yellow">70만원</p>
+                <p class="week yellow"></p>
               </li>
             </ul>
             <div class="calc__second">
-              <p class="moneySecond">?초에</p>
-              <p class="secondMoney yellow">?원</p>
+              <p class="moneySecond"></p>
+              <p class="secondMoney yellow"></p>
             </div>
           </div>
         </div>
@@ -150,6 +166,7 @@
     </div>
   </div>
 
+  </div>
   <!-- FOOTER -->
   <footer>
     <div class="inner">
